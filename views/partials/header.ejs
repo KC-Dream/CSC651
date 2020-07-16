@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- CDN -->
+        
+        <title>Team PICKLE Website!</title>
+        
+        <meta http-equiv="Content-Language" content="en-us">
+        <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+        <meta name="ProgId" content="FrontPage.Editor.Document">
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
+
+        <title>PICKLE SERVER</title>
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/js/mdb.min.js"></script>
+
+          <!--Navbar -->
+          <nav id ="navbar-color" class="mb-1 navbar navbar-expand-lg">
+            
+            <a id ="navbar-color" class="navbar-brand team-name-text" href="#">Team: TIHS PICKLE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+              aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div id ="navbar-color" class="collapse navbar-collapse" id="navbarSupportedContent-333">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a id ="navbar-color" class="nav-link" href="/homepage">HOME
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-Entertainment" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">FAVORITE YOUTUBE VIDEOS
+                  </a>
+                  <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-Entertainment">
+                    
+                    <a class="dropdown-item" href="/music">YOUTUBE VIDEOS</a>
+                  </div>
+                </li>
+                
+                
+                
+                <li class="nav-item">
+                  
+                </li>
+                
+                <li class="nav-item">
+                  
+                </li>
+                
+                
+                
+              </ul>
+
+              <ul class="navbar-nav ml-auto nav-flex-icons">
+                
+                <% if(!currentUser) { %>
+                <li>
+                  <a href="/login"><button id="animateButton1" class="btn blue-gradient">Login</button></a>
+                </li>
+                <li>
+                  <a href="/register"><button id="animateButton2" class="btn aqua-gradient">SignUp</button></a>
+                </li>
+                <% } else { %>
+                
+                <li>
+                  <a><button id="animateButtonU" class="btn blue-gradient">Welcome, <%= currentUser.username %></button></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333"> 
+                    <a class="dropdown-item" href="/logout">Log out</a>
+                  </div>
+                </li>
+                <%  } %>
+                
+              </ul>
+              
+
+            </div>
+          </nav>
+          <!--/.Navbar -->
+
+          <style>
+            .team-name-text {
+              font-size: xx-large;
+            }
+            #navbar-color {
+              color: white;
+              font-weight: bold;
+              background-color: teal;
+            }
+          </style>
+
+    <script>
+
+    </script>
+
+
+
+
+
